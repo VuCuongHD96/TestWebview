@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41B13C1284F42C7005FBCFF /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A41B13C0284F42C7005FBCFF /* PopupViewController.xib */; };
 		A4D4C5D0284EE5250058C56D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4C5CF284EE5250058C56D /* AppDelegate.swift */; };
 		A4D4C5D2284EE5250058C56D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4C5D1284EE5250058C56D /* SceneDelegate.swift */; };
 		A4D4C5D4284EE5250058C56D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4C5D3284EE5250058C56D /* ViewController.swift */; };
 		A4D4C5D7284EE5250058C56D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D4C5D5284EE5250058C56D /* Main.storyboard */; };
 		A4D4C5D9284EE5260058C56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D4C5D8284EE5260058C56D /* Assets.xcassets */; };
 		A4D4C5DC284EE5260058C56D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D4C5DA284EE5260058C56D /* LaunchScreen.storyboard */; };
+		A4D4C5E4284EE58B0058C56D /* WebviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4C5E3284EE58B0058C56D /* WebviewManager.swift */; };
+		A4D4C5E6284EE5E00058C56D /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4C5E5284EE5E00058C56D /* PopupViewController.swift */; };
+		A4D4C5E8284EEF2A0058C56D /* WebPresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4C5E7284EEF2A0058C56D /* WebPresentTransition.swift */; };
+		A4D4C5EA284EF8710058C56D /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = A4D4C5E9284EF8710058C56D /* popup.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A41B13C0284F42C7005FBCFF /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 		A4D4C5CC284EE5250058C56D /* TestWebview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWebview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D4C5CF284EE5250058C56D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4D4C5D1284EE5250058C56D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		A4D4C5D8284EE5260058C56D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4D4C5DB284EE5260058C56D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4D4C5DD284EE5260058C56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4D4C5E3284EE58B0058C56D /* WebviewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewManager.swift; sourceTree = "<group>"; };
+		A4D4C5E5284EE5E00058C56D /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		A4D4C5E7284EEF2A0058C56D /* WebPresentTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPresentTransition.swift; sourceTree = "<group>"; };
+		A4D4C5E9284EF8710058C56D /* popup.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +66,13 @@
 		A4D4C5CE284EE5250058C56D /* TestWebview */ = {
 			isa = PBXGroup;
 			children = (
+				A4D4C5E9284EF8710058C56D /* popup.html */,
 				A4D4C5CF284EE5250058C56D /* AppDelegate.swift */,
 				A4D4C5D1284EE5250058C56D /* SceneDelegate.swift */,
+				A4D4C5E7284EEF2A0058C56D /* WebPresentTransition.swift */,
+				A4D4C5E5284EE5E00058C56D /* PopupViewController.swift */,
+				A41B13C0284F42C7005FBCFF /* PopupViewController.xib */,
+				A4D4C5E3284EE58B0058C56D /* WebviewManager.swift */,
 				A4D4C5D3284EE5250058C56D /* ViewController.swift */,
 				A4D4C5D5284EE5250058C56D /* Main.storyboard */,
 				A4D4C5D8284EE5260058C56D /* Assets.xcassets */,
@@ -126,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D4C5DC284EE5260058C56D /* LaunchScreen.storyboard in Resources */,
+				A4D4C5EA284EF8710058C56D /* popup.html in Resources */,
+				A41B13C1284F42C7005FBCFF /* PopupViewController.xib in Resources */,
 				A4D4C5D9284EE5260058C56D /* Assets.xcassets in Resources */,
 				A4D4C5D7284EE5250058C56D /* Main.storyboard in Resources */,
 			);
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D4C5E6284EE5E00058C56D /* PopupViewController.swift in Sources */,
+				A4D4C5E8284EEF2A0058C56D /* WebPresentTransition.swift in Sources */,
 				A4D4C5D4284EE5250058C56D /* ViewController.swift in Sources */,
 				A4D4C5D0284EE5250058C56D /* AppDelegate.swift in Sources */,
 				A4D4C5D2284EE5250058C56D /* SceneDelegate.swift in Sources */,
+				A4D4C5E4284EE58B0058C56D /* WebviewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

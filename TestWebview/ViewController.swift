@@ -9,11 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let webviewManager = WebviewManager.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        webviewManager.setupWebview()
+        
+    }
+    
+    @IBAction func action(_ sender: Any) {
+        print("tapped")
+    }
 }
-
